@@ -1,24 +1,157 @@
 *{margin:0; padding: 0; box-sizing: border-box;}
 *::before, *::after{box-sizing: border-box;}
 
+body{
+    height: 100vh;
+    background: #EAECF1;
+}
+
 div.wrapper{
-    border: 1px solid black;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     display: flex;
     justify-content: space-between;
+    box-shadow: 0px 0px 20px 3px #CFD0D5;
 }
 
 div.wrapper > .functionArea{
-    border: 1px solid red;
     width: 26vw;
-    height:62vh;
+    background: #FFFFFF;
+}
+
+div.functionArea > ul.nav{
+    width: 14vw;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+}
+
+ul.nav > li > a{
+    font-size: 18px;
+    color: black;
+    font-family: monospace;
+}
+
+div.functionArea > .tab-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.tab-content > img.signLogo{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 2.5vw;
+    margin-bottom: 3vh;
+    border: 1px solid #D16584;
+}
+
+div.tab-content > div.signUp{
+    text-align: center;
+}
+
+div.signUp > .signSlogen{
+    font-size: 18px;
+    margin-bottom: 3vh;
+}
+
+form{
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.signUp > form > div.buttonSign{
+}
+
+div.tab-content > div.login{
+    text-align: center;
+}
+
+div.login > .loginSlogen{
+    font-size: 18px;
+    margin-bottom: 3vh;
+}
+
+div.login > form{
+
+}
+
+div.login > form > div.buttonLogin{
+}
+
+input[type='text'], input[type='email'], input[type="password"]{
+    border:0;
+    border-bottom:1px solid black;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+input[type='submit']{
+    box-shadow: none;
+    padding: 0.5vw 0.25vw;
+    font-size: 18px;
+    border-width: 0;
+    border-radius: 5.4vh;
+    background: red;
+    color: #FFFCFB;
+    width: 8vw;
+    text-align:center;
+    text-decoration:none;
 }
 
 div.wrapper > .slide{
-    border: 1px solid red;
     width: 44vw;
-    height: 62vh;
+    background: #FFFFFF;
+    background: url("http://ovjvlkd5x.bkt.clouddn.com/2233background2.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+div.wrapper > .slide::before{
+    content: "";
+    background: rgba(0,0,0,0.15);
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+div.wrapper > div.slide > div{
+    position: absolute;
+    font-size: 26px;
+    font-family: "Microsoft YaHei UI";
+    color: #2f2f2f;
+    z-index: 1;
+}
+
+div.wrapper > div.slide > .welcomeA{
+    top: 70%;
+    left: 15%;
+}
+
+div.wrapper > div.slide > .welcomeB{
+    top: 80%;
+    left: 15%;
+}
+
+svg.icon{
+    width: 3vh;
+    height: 3vh;
+}
+
+.nav-pills>.active>a,
+.nav-pills>.active>a:hover,
+.nav-pills>.active>a:focus{
+    background-color: #D16584;
 }
