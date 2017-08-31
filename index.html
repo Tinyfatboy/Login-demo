@@ -22,12 +22,12 @@
     <div class="wrapper">
         <div class="functionArea">
             <ul class="nav nav-pills">
-                <li class="active"><a href="#signUp" data-toggle="tab">注册</a></li>
-                <li><a href="#login" data-toggle="tab">登录</a></li>
+                <li><a href="#signUp" data-toggle="tab">注册</a></li>
+                <li class="active"><a href="#login" data-toggle="tab">登录</a></li>
             </ul>
             <div class="tab-content">
-                <img src="img/22.jpg" alt="" class="signLogo">
-                <div class="signUp tab-pane fade in active" id="signUp">
+                <img src="img/2233x.jpg" alt="" class="signLogo">
+                <div class="signUp tab-pane fade" id="signUp">
                     <div class="signSlogen">欢迎注册BiliBili</div>
                     <form name="signUp">
                         <div>
@@ -35,7 +35,7 @@
                                 <svg class="icon" aria-hidden="true">
                                     <use xlink:href="#icon-zhanghao"></use>
                                 </svg>
-                                <input type="text" name="username" placeholder="用户名">
+                                <input type="text" name="username" placeholder="用户名" maxlength="28">
                             </label>
                         </div>
                         <div>
@@ -43,7 +43,7 @@
                                 <svg class="icon" aria-hidden="true">
                                     <use xlink:href="#icon-email"></use>
                                 </svg>
-                                <input type="email" name="email" placeholder="邮箱">
+                                <input type="email" name="email" placeholder="邮箱" maxlength="28">
                             </label>
                         </div>
                         <div>
@@ -51,15 +51,15 @@
                                 <svg class="icon" aria-hidden="true">
                                     <use xlink:href="#icon-password"></use>
                                 </svg>
-                                <input type="password" name="password" placeholder="密码">
+                                <input type="password" name="password" placeholder="密码" maxlength="15" >
                             </label>
                         </div>
                         <div class="buttonSign">
-                            <input type="submit" value="注册">
+                            <input type="submit" value="Sign Up">
                         </div>
                     </form>
                 </div>
-                <div class="login tab-pane fade" id="login">
+                <div class="login tab-pane fade in active" id="login">
                     <div class="loginSlogen">欢迎登录BiliBili</div>
                     <form name="login">
                         <div>
@@ -67,7 +67,7 @@
                                 <svg class="icon" aria-hidden="true">
                                     <use xlink:href="#icon-zhanghao"></use>
                                 </svg>
-                                <input type="text" name="username" placeholder="用户名">
+                                <input type="text" name="username" placeholder="用户名" maxlength="28">
                             </label>
                         </div>
                         <div>
@@ -75,11 +75,11 @@
                                 <svg class="icon" aria-hidden="true">
                                     <use xlink:href="#icon-password"></use>
                                 </svg>
-                                <input type="password" name="password" placeholder="密码">
+                                <input type="password" name="password" placeholder="密码" maxlength="15">
                             </label>
                         </div>
                         <div class="buttonLogin">
-                            <input type="submit" value="登录">
+                            <input type="submit" value="Login">
                         </div>
                     </form>
                 </div>
