@@ -49,7 +49,7 @@ div.tab-content > img.signLogo{
     height: 5vw;
     border-radius: 2.5vw;
     margin-bottom: 3vh;
-    border: 1px solid #D16584;
+    border: none;
 }
 
 div.tab-content > div.signUp{
@@ -98,15 +98,16 @@ input[type='text'], input[type='email'], input[type="password"]{
 
 input[type='submit']{
     box-shadow: none;
-    padding: 0.5vw 0.25vw;
-    font-size: 18px;
+    padding: 0.5vw 0vw;
+    font-size: 16px;
     border-width: 0;
     border-radius: 5.4vh;
-    background: red;
+    background: #D26585;
     color: #FFFCFB;
     width: 8vw;
     text-align:center;
     text-decoration:none;
+    font-family: Arial;
 }
 
 div.wrapper > .slide{
