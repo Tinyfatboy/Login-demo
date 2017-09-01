@@ -58,7 +58,7 @@ div.tab-content > div.signUp{
 
 div.signUp > .signSlogen{
     font-size: 18px;
-    margin-bottom: 3vh;
+    margin-bottom: 1vh;
 }
 
 form{
@@ -69,23 +69,21 @@ form{
     align-items: center;
 }
 
-div.signUp > form > div.buttonSign{
-}
-
 div.tab-content > div.login{
     text-align: center;
 }
 
 div.login > .loginSlogen{
     font-size: 18px;
-    margin-bottom: 3vh;
+    margin-bottom: 1vh;
 }
 
-div.login > form{
-
-}
-
-div.login > form > div.buttonLogin{
+span.error{
+    margin-bottom: 3.5vh;
+    color: #D80053;
+    height: 1.8vh;
+    line-height: 1.8vh;
+    display: block;
 }
 
 input[type='text'], input[type='email'], input[type="password"]{
@@ -94,6 +92,10 @@ input[type='text'], input[type='email'], input[type="password"]{
     background: transparent;
     box-shadow: none;
     border-radius: 0;
+}
+
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
 
 input[type='submit']{
