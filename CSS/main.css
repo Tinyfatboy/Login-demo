@@ -112,10 +112,14 @@ input[type='submit']{
     font-family: Arial;
 }
 
+input[type='submit']:focus{
+    outline: 0;
+}
+
 div.wrapper > .slide{
     width: 44vw;
     background: #FFFFFF;
-    background: url("http://ovjvlkd5x.bkt.clouddn.com/2233background2.jpg") no-repeat center;
+    background: url("../img/2233background2.jpg") no-repeat center;
     background-size: cover;
     position: relative;
 }
