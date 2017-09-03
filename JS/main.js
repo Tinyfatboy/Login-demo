@@ -32,7 +32,7 @@ signUpForm.on('submit', (e) => {
         setTimeout(function () {
             AV.User.logOut()
             window.location.reload()
-        }, 3000)
+        }, 2500)
     }, function (error) {
         console.log(error.code)
         if(error.code === 202){
