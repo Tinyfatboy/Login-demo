@@ -6,14 +6,6 @@ $("form input[name='password']").on('blur', function () {
     $('img').attr('src', 'img/2233x.jpg').css('border', 'none')
 })
 
-var APP_ID = 'G2hjG6oLE5YnUbbFcg0P8ibR-gzGzoHsz';
-var APP_KEY = 'f5Wlf1Lw7PdjlTqg9bKGz3KC';
-
-AV.init({
-    appId: APP_ID,
-    appKey: APP_KEY
-});
-
 let user = AV.User.current()
 if(user){
     console.log('user')
@@ -48,21 +40,28 @@ signUpForm.on('submit', (e) => {
         }else if(error.code === 203){
             $('.signError').text('邮箱已重复使用')
         }
-    });
+    })
 })
 
-let loginForm = document.querySelector('form[name=login]')
-loginForm.onsubmit = (e) => {
+let loginForm = $('form[name=login]')
+loginForm.on('submit',(e) => {
     e.preventDefault()
-    let password = loginForm.password.value
+
+    //获取密码
+    let password = loginForm[0].password.value
     console.log(password)
-    let username = loginForm.username.value
+    //获取用户名
+    let username = loginForm[0].username.value
     console.log(username)
 
     AV.User.logIn(username, password).then(function (loginedUser) {
         console.log(loginedUser)
-        window.location.reload()
+        window.location.href = 'home.html'
     }, function (error) {
-        console.log(error)
+        if(error.code === 210){
+            $('.loginError').text('用户名和密码不匹配')
+        }else if(error.code === 211){
+            $('.loginError').text('用户名不存在')
+        }
     })
-}
+})
