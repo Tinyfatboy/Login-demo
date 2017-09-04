@@ -52,7 +52,7 @@ input[type="button"]:focus{
 }
 div.container{
     border: 1px solid grey;
-    perspective: 1200px;
+    perspective: 1000px;
 }
 div.container > div.banner{
     height: 405px;

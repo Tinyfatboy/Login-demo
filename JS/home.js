@@ -2,10 +2,10 @@ var container = $('.container')
 var banner = $('.banner')
 container.on('mousemove', function(e){
 //  console.log(clientX, e.clientY)
-    let width = container[0].getBoundingClientRect().width
-    let height = container[0].getBoundingClientRect().height
-    let xCenter = container[0].offsetLeft + width / 2
-    let yCenter = container[0].offsetTop + height / 2
+    let width = container.outerWidth()
+    let height = container.outerHeight()
+    let xCenter = container.offset().top + width / 2
+    let yCenter = container.offset().left + height / 2
     let xDiff = e.clientX - xCenter
     let yDiff = e.clientY - yCenter
 
@@ -14,10 +14,10 @@ container.on('mousemove', function(e){
 
     let xPercent = xDiff/width*2
     let yPercent = yDiff/height*2
-    console.log(xPercent, yPercent)
 
-    let xDeg = xPercent * 6
-    let yDeg = yPercent * 6
+    let xDeg = xPercent * 5
+    let yDeg = yPercent * 5
+    console.log(xDeg, yDeg)
 
     banner[0].style.transform = `translateZ(-10px) rotateX(${-yDeg}deg) rotateY(${xDeg}deg)`
 })
