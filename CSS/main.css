@@ -259,7 +259,7 @@ svg.icon{
 
     input[type='text'], input[type='email'], input[type="password"]{
         width: 20vw;
-        line-height: 20px;
+        vertical-align: middle;
     }
 
     input[type='submit']{
