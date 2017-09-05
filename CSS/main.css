@@ -259,7 +259,6 @@ svg.icon{
 
     input[type='text'], input[type='email'], input[type="password"]{
         width: 20vw;
-        vertical-align: middle;
     }
 
     input[type='submit']{
@@ -324,6 +323,8 @@ svg.icon{
     input[type='text'], input[type='email'], input[type="password"]{
         font-size: 17px;
         width: 40vw;
+        height: 23px;
+        line-height: 23px;
     }
 
     input[type='submit']{
