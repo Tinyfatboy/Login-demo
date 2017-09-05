@@ -171,7 +171,7 @@ svg.icon{
     }
 
     div.functionArea > ul.nav{
-        width: 30vw;
+        width: 40vw;
     }
 
     ul.nav > li > a{
@@ -211,6 +211,8 @@ svg.icon{
 
     input[type='text'], input[type='email'], input[type="password"]{
         font-size: 20px;
+        height: 26px;
+        line-height: 26px;
     }
 
     div.slide{
