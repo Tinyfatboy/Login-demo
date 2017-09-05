@@ -62,11 +62,11 @@ div.signUp > .signSlogen{
 }
 
 form{
-    height: 28vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+     height: 28vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
 }
 
 div.tab-content > div.login{
@@ -106,7 +106,7 @@ input[type='submit']{
     border-radius: 5.4vh;
     background: #D26585;
     color: #FFFCFB;
-    width: 8vw;
+    width: 7vw;
     text-align:center;
     text-decoration:none;
     font-family: Arial;
@@ -181,11 +181,6 @@ svg.icon{
     ul.nav-pills >li > a {
         padding-top: 1.5vh;
         padding-bottom: 1.5vh;
-        margin-top: 2px;
-        margin-bottom: 2px;
-        -webkit-border-radius: 1vh;
-        -moz-border-radius: 1vh;
-        border-radius: 1vh;
     }
 
     div.signUp > .signSlogen{
@@ -204,11 +199,10 @@ svg.icon{
     }
 
     input[type='submit']{
-        padding: 1vw 0vw;
+        padding: 1.5vw 0vw;
         font-size: 24px;
         border-radius: 5.4vh;
         width: 14vw;
-        line-height: normal;
     }
 
     span.error{
@@ -222,9 +216,68 @@ svg.icon{
     div.slide{
         display: none;
     }
+
 }
 
-@media (max-width: 415px){
+@media (max-width: 750px) {
+    div.wrapper > div.functionArea{
+        width: 30vw;
+    }
+
+    div.functionArea > ul.nav{
+        width: 20vw;
+    }
+
+    ul.nav > li > a{
+        font-size: 14px;
+    }
+
+    ul.nav-pills >li > a {
+        padding-top: 1.2vh;
+        padding-bottom: 1.2vh;
+    }
+
+    div.signUp > .signSlogen{
+        font-size: 16px;
+    }
+
+    div.login > .loginSlogen{
+        font-size: 16px;
+    }
+
+    div.tab-content > img.signLogo{
+        width: 7vw;
+        height: 7vw;
+        border-radius: 3.5vw;
+        margin-bottom: 4vh;
+    }
+
+    form{
+        height: 34vh;
+        margin-bottom: 4vh;
+    }
+
+    input[type='text'], input[type='email'], input[type="password"]{
+        width: 20vw;
+    }
+
+    input[type='submit']{
+        font-size: 14px;
+        border-radius: 5vh;
+        width: 9vw;
+    }
+
+    div.wrapper > .slide{
+        width: 50vw;
+    }
+
+    svg.icon{
+        width: 4vh;
+        height: 4vh;
+    }
+}
+
+@media (max-width: 450px){
     div.wrapper > div.functionArea{
         width: 80vw;
         background: url("../img/2233background2.jpg") no-repeat center;
@@ -240,13 +293,8 @@ svg.icon{
     }
 
     ul.nav-pills >li > a {
-        padding-top: 1.2vh;
-        padding-bottom: 1.2vh;
-        margin-top: 2px;
-        margin-bottom: 2px;
-        -webkit-border-radius: 1vh;
-        -moz-border-radius: 1vh;
-        border-radius: 1vh;
+        padding-top: 1.4vh;
+        padding-bottom: 1.4vh;
     }
 
     div.tab-content > img.signLogo{
@@ -256,27 +304,40 @@ svg.icon{
         margin-bottom: 6vh;
     }
 
-    div.signUp > .signSlogen{
-        font-size: 20px;
+    div.signUp > .signSlogen {
+        font-size: 22px;
     }
 
     div.login > .loginSlogen{
-        font-size: 20px;
+        font-size: 22px;
+    }
+
+    span.error{
+        font-size: 18px;
+    }
+
+    form{
+        height: 28vh;
     }
 
     input[type='text'], input[type='email'], input[type="password"]{
         font-size: 17px;
+        width: 40vw;
     }
 
     input[type='submit']{
-        padding: 1.5vw 0vw;
+        padding: 1.8vw 0vw;
         font-size: 18px;
         border-radius: 5.4vh;
-        width: 19vw;
-        line-height: normal;
+        width: 20vw;
     }
 
     div.slide{
         display: none;
+    }
+
+    svg.icon{
+        width: 3vh;
+        height: 3vh;
     }
 }
