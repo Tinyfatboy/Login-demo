@@ -45,7 +45,7 @@ input[type="button"]:hover{
 input[type="button"]:focus{
     outline: 0;
 }
-.message{
+span.message{
     margin-left: 5px;
     font-size: 16px;
     color: #D80053;
@@ -63,4 +63,116 @@ div.container > div.banner{
     border: 1px solid #141333;
     box-shadow: 0px 0px 10px 2px hsla(0,0%,0%,0.55);
     transition: transform .2s;
+}
+
+@media (max-width: 800px) and (min-height: 850px) {
+    div.wrapper{
+        width: 82vw;
+    }
+    div.welcome{
+        width: 82vw;
+        top: -7vh;
+        height: 6vh;
+        line-height: 6vh;
+    }
+    div.welcome > h2{
+        margin-left: 1vw;
+        font-size: 35px;
+    }
+    input[type="button"]{
+        padding: 0.6vh;
+        font-size: 22px;
+        border-radius: 3vw;
+        width: 11vw;
+        margin-left: 3vw;
+        vertical-align: 0.2vh;
+    }
+    span.message{
+        margin-left: 1vw;
+        font-size: 19px;
+    }
+    div.container > div.banner{
+        height: 60vh;
+        width: 70vw;
+        margin: 6vw;
+    }
+}
+
+@media (max-width: 750px){
+    div.wrapper{
+        width: 72vw;
+    }
+    div.welcome{
+        width: 72vw;
+        height: 4vh;
+        top: -8vh;
+        line-height: 4vh;
+    }
+    div.welcome > h2{
+        margin-left: 1vw;
+        font-size: 24px;
+    }
+    input[type="button"]{
+        padding: 1vh;
+        font-size: 14px;
+        border-radius: 2vw;
+        width: 8vw;
+        margin-left: 2vw;
+        vertical-align: 0.5vh;
+    }
+    input[type="button"]:hover{
+        cursor: pointer;
+    }
+    input[type="button"]:focus{
+        outline: 0;
+    }
+    span.message{
+        margin-left: 1vw;
+        font-size: 14px;
+        color: #D80053;
+    }
+    div.container{
+        margin-bottom: -5vh;
+    }
+    div.container > div.banner{
+        height: 66vh;
+        width: 66vw;
+        margin: 3vw;
+    }
+}
+
+@media (max-width: 450px) {
+    div.wrapper{
+        width: 82vw;
+    }
+    div.welcome{
+        width: 82vw;
+        height: 6vh;
+        top: -6vh;
+        line-height: normal;
+    }
+    div.welcome > h2{
+        margin-left: 1vw;
+        font-size: 27px;
+    }
+    input[type="button"]{
+        padding: 0.8vh;
+        font-size: 18px;
+        border-radius: 4vw;
+        width: 18vw;
+        margin-left: 5vw;
+        vertical-align: 0.5vh;
+    }
+    span.message{
+        margin-left: 1vw;
+        font-size: 16px;
+    }
+    div.container{
+        margin-top: 3vh;
+    }
+    div.container > div.banner{
+        height: 60vh;
+        width: 70vw;
+        margin: 6vw;
+    }
 }
