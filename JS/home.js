@@ -40,7 +40,7 @@ if(!user){
 }
 
 Logout.on('click', function () {
-    console.log('logout')
+    alert('test')
     AV.User.logOut()
     Message.text('成功登出，正在跳转...')
     setTimeout(function () {
@@ -48,8 +48,8 @@ Logout.on('click', function () {
     }, 1000)
 })
 
-Logout.on('touchstart', function () {
-    console.log('logout')
+Logout.on('touchend', function () {
+    alert('test')
     AV.User.logOut()
     Message.text('成功登出，正在跳转...')
     setTimeout(function () {
