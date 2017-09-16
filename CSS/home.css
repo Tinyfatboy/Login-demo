@@ -24,7 +24,7 @@ div.welcome > h2{
     font-family: "Microsoft YaHei UI Light";
     color: #00A1D6;
 }
-input[type="button"]{
+input[type="submit"]{
     box-shadow: none;
     padding: 4px;
     font-size: 14px;
@@ -38,12 +38,11 @@ input[type="button"]{
     font-family: Arial;
     margin-left: 30px;
     vertical-align: 2px;
-    z-index: 5;
 }
-input[type="button"]:hover{
+input[type="submit"]:hover{
     cursor: pointer;
 }
-input[type="button"]:focus{
+input[type="submit"]:focus{
     outline: 0;
 }
 span.message{
@@ -80,7 +79,7 @@ div.container > div.banner{
         margin-left: 1vw;
         font-size: 35px;
     }
-    input[type="button"]{
+    input[type="submit"]{
         padding: 0.6vh;
         font-size: 22px;
         border-radius: 3vw;
@@ -121,12 +120,6 @@ div.container > div.banner{
         margin-left: 2vw;
         vertical-align: 0.5vh;
     }
-    input[type="button"]:hover{
-        cursor: pointer;
-    }
-    input[type="button"]:focus{
-        outline: 0;
-    }
     span.message{
         margin-left: 1vw;
         font-size: 14px;
@@ -156,7 +149,7 @@ div.container > div.banner{
         margin-left: 1vw;
         font-size: 27px;
     }
-    input[type="button"]{
+    input[type="submit"]{
         padding: 0.8vh;
         font-size: 18px;
         border-radius: 4vw;
