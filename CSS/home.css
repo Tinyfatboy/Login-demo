@@ -28,7 +28,7 @@ input[type="submit"]{
     box-shadow: none;
     padding: 4px;
     font-size: 14px;
-    border: none;
+    border-width: 0;
     border-radius: 12px;
     background: #D26585;
     color: #FFFCFB;
@@ -38,6 +38,7 @@ input[type="submit"]{
     font-family: Arial;
     margin-left: 30px;
     vertical-align: 2px;
+    -webkit-appearance: button;
 }
 input[type="submit"]:hover{
     cursor: pointer;
