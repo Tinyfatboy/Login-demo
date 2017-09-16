@@ -39,7 +39,7 @@ if(!user){
     }, 3000)
 }
 
-Logout.on('click', function (e) {
+Logout.on('click', function () {
     console.log('logout')
     AV.User.logOut()
     Message.text('成功登出，正在跳转...')
@@ -48,7 +48,7 @@ Logout.on('click', function (e) {
     }, 1000)
 })
 
-Logout.on('touchstart', function (e) {
+Logout.on('touchstart', function () {
     console.log('logout')
     AV.User.logOut()
     Message.text('成功登出，正在跳转...')
