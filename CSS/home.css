@@ -39,6 +39,7 @@ input[type="submit"]{
     margin-left: 30px;
     vertical-align: 2px;
     -webkit-appearance: button;
+    z-index: 10;
 }
 input[type="submit"]:hover{
     cursor: pointer;
@@ -151,10 +152,10 @@ div.container > div.banner{
         font-size: 27px;
     }
     input[type="submit"]{
-        padding: 0.8vh;
+        padding: 0.6vh;
         font-size: 18px;
         border-radius: 4vw;
-        width: 19vw;
+        width: 18vw;
         margin-left: 5vw;
         vertical-align: 0.5vh;
     }
