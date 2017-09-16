@@ -38,6 +38,7 @@ input[type="button"]{
     font-family: Arial;
     margin-left: 30px;
     vertical-align: 2px;
+    z-index: 5;
 }
 input[type="button"]:hover{
     cursor: pointer;
@@ -159,7 +160,7 @@ div.container > div.banner{
         padding: 0.8vh;
         font-size: 18px;
         border-radius: 4vw;
-        width: 18vw;
+        width: 19vw;
         margin-left: 5vw;
         vertical-align: 0.5vh;
     }
