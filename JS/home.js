@@ -39,7 +39,16 @@ if(!user){
     }, 3000)
 }
 
-Logout.on('click', function () {
+Logout.on('click', function (e) {
+    console.log('logout')
+    AV.User.logOut()
+    Message.text('成功登出，正在跳转...')
+    setTimeout(function () {
+        window.location.href = 'index.html'
+    }, 1000)
+})
+
+Logout.on('touchstart', function (e) {
     console.log('logout')
     AV.User.logOut()
     Message.text('成功登出，正在跳转...')
